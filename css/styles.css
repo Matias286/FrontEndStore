@@ -99,6 +99,7 @@ h3{
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     margin-top: 2rem;
+    bottom: 0;
 }
 
 .footer__texto{
@@ -201,5 +202,44 @@ h3{
     }
 }
 
+/* ================================= (SOBRE NOSOTROS) ================================= */
 
+.grid__nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+}
 
+.flex__nosotros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid__nosotros__img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.46);
+}
+
+.grid__nosotros__texto{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px){
+
+    .grid__nosotros{
+        grid-template-columns: 1fr;
+    }
+
+    .grid__nosotros__texto{
+        justify-self: center;
+        margin: 10px 10px;
+    }
+
+    .grid__nosotros__img{
+        grid-row: 1 / 2;
+    }
+}
