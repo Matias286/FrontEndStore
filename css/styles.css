@@ -99,6 +99,7 @@ h3{
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     margin-top: 2rem;
+    position: relative;
     bottom: 0;
 }
 
@@ -228,6 +229,36 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ================================= (BLOQUES) ================================= */
+
+
+.comprar__titulo{
+    color: var(--secundario);
+}
+
+.bloques{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.bloque__titulo{
+    color: var(--secundario);
+    margin: 0;
+}
+
+.bloque{
+    text-align: center;
+}
+
+.bloque p{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+
+
+
 @media (max-width: 768px){
 
     .grid__nosotros{
@@ -241,5 +272,15 @@ h3{
 
     .grid__nosotros__img{
         grid-row: 1 / 2;
+    }
+}
+
+@media (max-width: 500px){
+    .bloques{
+        grid-template-columns: 1fr;
+    }
+
+    .bloque__imagen{
+        width: 75%;
     }
 }
